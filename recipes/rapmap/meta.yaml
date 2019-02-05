@@ -8,6 +8,9 @@ source:
   url: https://github.com/COMBINE-lab/RapMap/archive/v{{ version }}.tar.gz
   sha256: 1ebb4f9b9b0b20cb73cb3663a57e3d8781f1e56953aec6d2f86e4a037dde11f6
 
+build:
+  number: 0
+
 requirements:
   build:
     - {{ compiler('cxx') }}
@@ -24,10 +27,6 @@ requirements:
     - tbb
     - zlib
     - bzip2
-
-build:
-  number: 0
-  #skip: True # [osx]
 
 about:
   home: https://github.com/COMBINE-lab/RapMap
